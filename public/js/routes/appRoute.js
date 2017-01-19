@@ -26,7 +26,7 @@ define(['app'], function (app) {
             })
             .when('/add_new_addr', {
                 templateUrl: 'js/templates/addNewAddr.html',
-                controller: 'AddNewAddr'
+                controller: 'AddNewAddrCtrl'
             })
             .when('/choose_coordinate', {
                 templateUrl: 'js/templates/chooseCoordinate.html',

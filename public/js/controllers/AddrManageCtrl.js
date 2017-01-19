@@ -8,5 +8,6 @@ define(['app'], function (app) {
         $scope.toAddNewAddr = function () {
             window.location = '#/add_new_addr'
         }
+
     }])
 })

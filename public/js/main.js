@@ -41,7 +41,7 @@ require.config({
 })
 
 require(['angular', 'angular-messages', 'angular-route', 'app', 'appRoute',
-    'HomeCtrl', 'PersonalCenterCtrl', 'AddrManageCtrl', 'FeedbackCtrl', 'OrderConfirmCtrl',
-    'OrderConfirmCtrl', 'LoginCtrl', 'ChooseCoordinateCtrl', 'LocationAddrCtrl'], function (angular) {
-    angular.bootstrap(document, ['jouleApp'])
+        'HomeCtrl', 'PersonalCenterCtrl', 'AddNewAddrCtrl', 'AddrManageCtrl', 'FeedbackCtrl', 'OrderConfirmCtrl',
+        'OrderConfirmCtrl', 'LoginCtrl', 'ChooseCoordinateCtrl', 'LocationAddrCtrl'], function (angular) {
+        angular.bootstrap(document, ['jouleApp'])
 })
