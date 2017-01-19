@@ -5,12 +5,13 @@ require.config({
     baseUrl: 'js/',
 
     paths: {
+        //引入第三方模块
         'angular': 'libs/angular',
         'angular-messages': 'libs/angular-messages',
         'angular-route': 'libs/angular-route',
-
+        //app
         'app': 'app/app',
-
+        //controllers
         'HomeCtrl': 'controllers/HomeCtrl',
         'PersonalCenterCtrl': 'controllers/PersonalCenterCtrl',
         'AddrManageCtrl': 'controllers/AddrManageCtrl',
@@ -20,8 +21,12 @@ require.config({
         'LoginCtrl': 'controllers/LoginCtrl',
         'ChooseCoordinateCtrl': 'controllers/ChooseCoordinateCtrl',
         'LocationAddrCtrl': 'controllers/LocationAddrCtrl',
-
-        'appRoute': 'routes/appRoute'
+        //routes
+        'appRoute': 'routes/appRoute',
+        //services
+        'serverService': 'services/serverService',
+        //untils
+        'storageUtil': 'utils/storageUtil'
     },
 
     shim : {
@@ -41,7 +46,8 @@ require.config({
 })
 
 require(['angular', 'angular-messages', 'angular-route', 'app', 'appRoute',
-        'HomeCtrl', 'PersonalCenterCtrl', 'AddNewAddrCtrl', 'AddrManageCtrl', 'FeedbackCtrl', 'OrderConfirmCtrl',
-        'OrderConfirmCtrl', 'LoginCtrl', 'ChooseCoordinateCtrl', 'LocationAddrCtrl'], function (angular) {
+        'HomeCtrl', 'PersonalCenterCtrl', 'AddNewAddrCtrl', 'AddrManageCtrl',
+    'FeedbackCtrl', 'OrderConfirmCtrl', 'OrderConfirmCtrl', 'LoginCtrl',
+    'ChooseCoordinateCtrl', 'LocationAddrCtrl', 'serverService', 'storageUtil'], function (angular) {
         angular.bootstrap(document, ['jouleApp'])
 })

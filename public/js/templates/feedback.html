@@ -4,9 +4,9 @@
 </nav>
 <section class="section_com">
 	<div class="st_com">
-		<textarea class="fb_val" placeholder="请尽情说出你的不愉快，我们一定改进"></textarea>
+		<textarea class="fb_val" ng-model="feedback.content" placeholder="请尽情说出你的不愉快，我们一定改进"></textarea>
 	</div>
 </section>
 <footer class="footer_com">
-	<button class="fb_btn btn">提交</button>
+	<button class="fb_btn btn" ng-click="submit()">提交</button>
 </footer>

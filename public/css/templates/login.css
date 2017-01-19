@@ -67,3 +67,11 @@
 .code_enable {
     border: #ccc 2px solid
 }
+
+.errorMsg {
+    color: #F00;
+}
+
+.lp_loginBtn:disabled {
+    background-color: #a3a3a3;
+}
